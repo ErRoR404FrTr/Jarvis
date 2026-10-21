@@ -1,0 +1,16 @@
+# Fichiers batch locaux
+jarvis.bat
+
+# Dossiers lourds et modèles
+piper_voices/
+
+# Caches Python et VS Code
+__pycache__/
+.vscode/
+
+# Fichiers audio temporaires
+*.wav
+*.mp3
+
+# Chemin Application
+app_paths.py
