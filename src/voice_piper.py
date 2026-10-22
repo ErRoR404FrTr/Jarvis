@@ -22,7 +22,7 @@ from lingua import Language, LanguageDetectorBuilder
 # ------------------------------------------------------------------
 # SETTINGS (to adjust by ear)
 # ------------------------------------------------------------------
-VOICES_DIR = Path(__file__).parent / "piper_voices"    # Folder containing the .onnx and .onnx.json files
+VOICES_DIR = Path(__file__).parent.parent / "piper_voices"    # Folder containing the .onnx and .onnx.json files
 DEFAULT_LANGUAGE = "fr"                                # Language used when the detection fails
 
 # Name of the Piper voice for each language (adapt to the voices you downloaded)
