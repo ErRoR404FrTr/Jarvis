@@ -1,1 +1,11 @@
-ollama sounddevice screen-brightness-control pycaw piper-tts pedalboard lingua-language-detector openwakeword faster-whisper rapidfuzz
+ollama
+sounddevice
+screen-brightness-control
+pycaw
+piper-tts
+pedalboard
+lingua-language-detector
+openwakeword
+faster-whisper
+rapidfuzz
+numpy
