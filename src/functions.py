@@ -130,8 +130,6 @@ def process_command(user_message):
         history.append({'role': 'assistant', 'content': content})
         data = json.loads(content)
 
-        print(f"\nJarvis: {data.get('reply')}\n")
-
         actions = data.get("actions", [])
         failures = []                           # List of (status, app) for the actions that failed
 
