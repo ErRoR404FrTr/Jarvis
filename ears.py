@@ -170,9 +170,3 @@ def show_levels(seconds=6):
         for _ in range(int(seconds * 10)):
             data, _ = stream.read(1600)
             print(f"volume : {np.sqrt(np.mean(data ** 2)):.4f}")
-
-""" TEST """
-if __name__ == "__main__":                      # test: run ears.py on its own
-    load_in_background()
-    print("Say 'Hey Jarvis', then a command...")
-    print("Result :", listen())

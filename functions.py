@@ -8,12 +8,10 @@ import time
 import sys
 import ollama
 
-
-
 # Local libraries written by the author
 import action as ac
-import voice_piper as vx                # Change between voice_piper or voice_xtts (must be the same in main.py)
-from app_paths import applications      # List of all applications added by the user (NEED TO CREATE AN "app_paths.py" AND FOLLOW INSTRUCTS IN THE GITHUB)
+import voice_piper as vx
+from app_paths import applications      # List of all applications added by the user (NEED TO CREATE AN "app_paths.py" AND FOLLOW INSTRUCTION IN THE GITHUB)
 
 ollama_process = None
 
@@ -51,6 +49,7 @@ def build_apps_text():
         items.append(item)
     return "; ".join(items)
 
+# You can change the prompt but keep the part after the GOLDEN RULE include
 SYSTEM_PROMPT = """
 You are Jarvis, Iron Man's AI assistant.
 Your style is a mix of subtle humor and light sarcasm, but you are always extremely polite and helpful towards your creator (address him as "sir" in English, "Monsieur" in French and "efendim" in Turkish).
